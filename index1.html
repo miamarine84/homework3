@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+         <!-- Where the final password will be displayed -->
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate"  onclick="" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <div class="range">
+      <form action="" id="newForm">
+      <label for="quantity">Quantity (between 8 and 120):</label>
+      <input type="number" id="quantity" name="quantity" min="8" max="120">
+      <br>
+      <input id="rd1" type="checkbox" value="Uppercase Letter">Check to have uppercase letters in your password</input>
+      <br>
+      <input id="rd2" type="checkbox" value="Lowercase Letter">Check to have lowercase letters in your password</input>
+      <br>
+      <input id="rd3" type="checkbox" value="Numbers">Check to have numbers in your password</input>
+      <br>
+      <input id="rd4" type="checkbox" value="Special Characters">Check to have special characters letters in your password</input>
+      </form>
+
+        <br>
+        <br>
+        
+      </div>
+    </div>
+    <script src="script1.js">
+      
+    </script>
+  </body>
+</html>
